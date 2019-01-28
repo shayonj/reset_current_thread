@@ -5,7 +5,7 @@ require 'reset_current_thread/version'
 module ResetCurrentThread
   autoload :Middleware, 'reset_current_thread/middleware'
 
-  # Sets all items in the current current thread and fiber local to nil
+  # Sets all items in the current thread and fiber local to nil
   #
   # @return [Thread] current thread object.
   def self.all!
@@ -13,7 +13,7 @@ module ResetCurrentThread
     thread_locals!
   end
 
-  # Sets all items in the current current thread fiber local to nil
+  # Sets all items in the current thread fiber local to nil
   #
   # @return [Thread] current thread object.
   def self.fiber_locals!
@@ -23,7 +23,7 @@ module ResetCurrentThread
     Thread.current
   end
 
-  # Sets all items in the current current thread local to nil
+  # Sets all items in the current thread local to nil
   #
   # @return [Thread] current thread object.
   def self.thread_locals!
