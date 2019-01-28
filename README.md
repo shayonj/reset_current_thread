@@ -1,6 +1,6 @@
 # ResetCurrentThread
 
-In a multi-threaded environments, leaking context of current thread onto other parts of the application can
+In multi-threaded environments, leaking context of current thread onto other parts of the application can
 result into unwanted behaviors. `ResetCurrentThread` provides easy to use helper functions to reset current thread locals.
 Along with a Rack middleware compatible plugin.
 
